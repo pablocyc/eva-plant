@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./index.css">
+  <script type="module" src="./index.js"></script>
+</head>
+
+<body>
+  <main class="main">
+    <div class="banner">
+      <img src="img/logo-eva.png" alt="logo-eva" class="logo-main">
+      <h1 class="logo-text">eva plant</p>
+    </div>
+    <div class="login">
+      <button id="show-register" class="btn-register btn">Registra tu planta</button>
+      <button class="btn-my-plant btn">Mi Planta</button>
+    </div>
+  </main>
+  <dialog class="modal-register" id="register-plant">
+    <div class="title-register">
+      <h2 class="text-register">Registro</h2>
+      <p class="text-account">Crea una cuenta para tu planta</p>
+    </div>
+    <form name="user-plant" class="form">
+      <input type="text" class="btn-input input-name" placeholder="Nombre de tu planta">
+      <select class="btn-input">
+        <option disabled selected>¿Qué tipo de planta quieres cuidar?</option>
+        <option value="dollar">Dollar</option>
+        <option value="margarita">Margarita</option>
+        <option value="rosa">Rosa</option>
+        <option value="sabila">Sabila</option>
+      </select>
+      <select class="btn-input">
+        <option disabled selected>¿En qué etapa esta tu planta?</option>
+        <option value="happy">Feliz</option>
+        <option value="sad">Triste</option>
+      </select>
+      <input class="btn btn-submit" type="submit" value="Registrar">
+    </form>
+  </dialog>
+  <footer class="footer">
+    <p>Colegio Albert Einstein</p>
+  </footer>
+</body>
+
+</html>
